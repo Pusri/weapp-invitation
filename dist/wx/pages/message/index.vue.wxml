@@ -1,0 +1,30 @@
+<import src="/components/video.vue.wxml" />
+<import src="/components/form.vue.wxml" />
+<import src="/components/formlist.vue.wxml" /><template name="51135332">
+  <view class="_div data-v-5281b3bb message">
+    <scroll-view scroll-y bindscroll="handleProxy" class="_scroll-view data-v-5281b3bb box" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <view class="_p data-v-5281b3bb place"></view>
+      <view class="_div data-v-5281b3bb item" wx:key="index" key="{{index}}" wx:for="{{messageList}}" wx:for-index="index" wx:for-item="item">
+        <image class="_image data-v-5281b3bb left" src="{{item.url}}"></image>
+        <view class="_div data-v-5281b3bb right">
+          <view class="_div data-v-5281b3bb top"><label class="_span data-v-5281b3bb top-l">{{item.name}}</label> <label class="_span data-v-5281b3bb top-r">{{item.time}}</label></view>
+          <view class="_p data-v-5281b3bb con">{{item.desc}}</view>
+        </view>
+      </view>
+      <view class="_p data-v-5281b3bb place-end"></view>
+    </scroll-view>
+    <view class="_div data-v-5281b3bb bottom"><button class="_button data-v-5281b3bb left" lang="zh_CN" open-type="getUserInfo" bindgetuserinfo="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">说点啥吧</button> <button class="_button data-v-5281b3bb right" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">我要出席</button></view>
+    <view class="_div data-v-5281b3bb dialog" hidden="{{!(isOpen)}}"><textarea focus="true" maxlength="80" class="_textarea data-v-5281b3bb desc" placeholder="在这里输入您想要说的话" name="textarea" placeholder-style="color:#ccc;" value="{{desc}}" bindinput="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" />
+      <view class="_div data-v-5281b3bb btn"><button class="_button data-v-5281b3bb left" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">发送留言</button> <button class="_button data-v-5281b3bb right" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}">取消</button></view>
+    </view>
+    <view class="_div data-v-5281b3bb video-dialog" bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}">
+      <image src="../../static/images/video1.png" class="_image data-v-5281b3bb"></image>
+    </view>
+    <view class="_div data-v-5281b3bb form-dialog" bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}">
+      <image src="../../static/images/form.png" class="_image data-v-5281b3bb"></image>
+    </view>
+    <view class="_div data-v-5281b3bb video" hidden="{{!(isVideo)}}"><template bindcloseVideo="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="8da0436c"></template></view>
+    <view class="_div data-v-5281b3bb form" hidden="{{!(isForm)}}"><template bindcloseForm="handleProxy" bindgetFromlist="handleProxy" data-eventid="{{'9'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'1'], $root}}" is="61a4fdc5"></template></view>
+    <view class="_div data-v-5281b3bb form-list" hidden="{{!(isFormlist)}}"><template bindcloseFormlist="handleProxy" data-eventid="{{'10'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'2'], $root}}" is="5e0ed0e3"></template></view>
+  </view>
+</template>

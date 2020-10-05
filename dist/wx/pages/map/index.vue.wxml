@@ -1,0 +1,6 @@
+<template name="b80a4008">
+  <view class="_div data-v-0f5bf160 map">
+    <image mode="aspectFit" class="_image data-v-0f5bf160 head-img" src="../../static/images/t1.png"></image> <map class="_map data-v-0f5bf160 content" id="map" longitude="111.594275" latitude="40.826881" markers="{{markers}}" scale="18" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></map>
+    <image class="_image data-v-0f5bf160 footer" src="../../static/images/grren-flower-line.png"></image>
+  </view>
+</template>

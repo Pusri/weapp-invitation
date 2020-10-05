@@ -1,0 +1,24 @@
+<import src="/components/indexSwiper.vue.wxml" /><template name="765b7ab2">
+  <view class="_div data-v-11861d06 index">
+    <view class="_div data-v-11861d06 bg-swiper"><template data="{{...$root[$kk+'0'], $root}}" is="43efa60e"></template></view>
+    <image class="_image data-v-11861d06 inv" src="../../static/images/inv.png"></image>
+    <view class="_div data-v-11861d06 bg_music" wx:if="{{isPlay}}" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+      <image src="../../static/images/music_icon.png" class="_image data-v-11861d06 musicImg music_icon"></image>
+      <image src="../../static/images/music_play.png" class="_image data-v-11861d06 music_play pauseImg"></image>
+    </view>
+    <view class="_div data-v-11861d06 bg_music" wx:else bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <image src="../../static/images/music_icon.png" class="_image data-v-11861d06 musicImg"></image>
+      <image src="../../static/images/music_play.png" class="_image data-v-11861d06 music_play playImg"></image>
+    </view>
+    <view class="_div data-v-11861d06 info" animation="{{animationData}}">
+      <view class="_div data-v-11861d06 content">
+        <view class="_h1 data-v-11861d06">Mr.谢 & Miss.张</view>
+        <view class="_p data-v-11861d06">谨定于 2020年11月21日 （星期六）中午12:00</view>
+        <view class="_p data-v-11861d06">农历 十月初七 中午十二点整 举办婚礼</view>
+        <view class="_p data-v-11861d06">席设：呼和浩特市爱町堡国际大酒店</view>
+        <view class="_p data-v-11861d06">地址：内蒙古自治区呼和浩特市回民区成吉思汗西街</view>
+        <image src="../../static/images/we.png" class="_image data-v-11861d06 img_footer"></image>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,13 @@
+<template name="35e7efae">
+  <view class="_div data-v-ff92ab06 greet">
+    <image class="_image data-v-ff92ab06 head" src="../../static/images/heart-animation.gif"></image>
+    <scroll-view scroll-y class="_scroll-view data-v-ff92ab06 box">
+      <view class="_div data-v-ff92ab06 item" wx:key="index" key="{{index}}" wx:for="{{userList}}" wx:for-index="index" wx:for-item="item">
+        <image src="{{item.user.avatarUrl}}" class="_image data-v-ff92ab06"></image>
+        <view class="_p data-v-ff92ab06">{{item.user.nickName}}</view>
+      </view>
+    </scroll-view>
+    <view class="_p data-v-ff92ab06 count">已收到{{userList.length}}位好友送来的祝福</view>
+    <view class="_div data-v-ff92ab06 bottom"><button class="_button data-v-ff92ab06 left" lang="zh_CN" open-type="getUserInfo" bindgetuserinfo="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">送上祝福</button> <button class="_button data-v-ff92ab06 right" open-type="share">分享喜悦</button></view>
+  </view>
+</template>
